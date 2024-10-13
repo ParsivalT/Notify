@@ -1,0 +1,17 @@
+[project]
+name = "notify"
+version = "0.1.0"
+description = "The Stupid script for send notify of Quotation"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "python-dotenv>=1.0.1",
+    "requests[socks]>=2.32.3",
+    "schedule>=1.2.2",
+]
+
+[project.scripts]
+main = "main:main"
+
+[tool.uv]
+package = true
